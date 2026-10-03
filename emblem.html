@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryoStudio: Emblem</title>
+    <style>
+        @font-face {
+            font-family: "Manrope";
+            src: url("assets/fonts/Manrope-VariableFont_wght.ttf");
+        }
+        html {
+            font-size: calc(14px * var(--app-scale, 1));
+        }
+        body {
+            background-color: #111111;
+            color: #ffffff;
+            font-family: "Manrope", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            font-size: 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+        #present {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="present">
+        <p>Ready to present.</p>
+    </div>
+</body>
+<script>
+    function resize() {
+        document.documentElement.style.setProperty("--app-scale", (window.innerWidth / 1024));
+    }
+    window.addEventListener("resize", resize);
+    window.addEventListener("DOMContentLoaded", resize);
+</script>
+</html>

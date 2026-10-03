@@ -1,0 +1,24 @@
+{
+  "name": "cryostudio",
+  "version": "1.0.0",
+  "description": "The ultimate presentation software for casual use.",
+  "homepage": "https://github.com/solarcosmic/CryoStudio#readme",
+  "bugs": {
+    "url": "https://github.com/solarcosmic/CryoStudio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solarcosmic/CryoStudio.git"
+  },
+  "license": "GPL-3.0",
+  "author": "solarcosmic",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5"
+  }
+}
